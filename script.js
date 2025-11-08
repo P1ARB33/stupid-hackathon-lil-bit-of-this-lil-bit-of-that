@@ -16,8 +16,8 @@ window.addEventListener("load", () => {
             grid.appendChild(btn);
         }
 
-        // Randomly assign close functionality to **one** button
-        const closeBtn = buttons[6];
+        // Closes only on the 67th 67
+        const closeBtn = buttons[66];
         closeBtn.addEventListener("click", () => {
             modal.style.display = "none";
         });

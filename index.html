@@ -8,42 +8,74 @@
 </head>
 <body>
 
-    <h1>Sample Webpage</h1>
-    <p>Wait for things to happen (smile)</p>
+<!-- Clairo Lyrics Quiz -->
+<h2>Clairo Lyrics Quiz</h2>
 
-    <!-- 67 Container -->
-    <div id="six-seven" class="modal">
-        <div id="modal-content">
-                <h3>Click the 6th 7 or the 67th 67</h3>
-            <div id="button-grid">
-            </div>
+<div id="lyrics-quiz">
+
+    Bubble gum down my throat and it's a 
+    <input type="text" id="q1" class="quizInput"> 
+    </p>
+    <div id="q1-result" class="result"></div>
+
+    I was such a 
+    <input type="text" id="q2" class="quizInput">
+    </p>
+    <div id="q2-result" class="result"></div>
+
+    You're telling me I'm 
+    <input type="text" id="q3" class="quizInput"> , it's no fun in the old days
+    </p>
+    <div id="q3-result" class="result"></div>
+
+    How I love you with your 
+    <input type="text" id="q4" class="quizInput"> down
+    </p>
+    <div id="q4-result" class="result"></div>
+
+    You can call me by the name I gave you 
+    <input type="text" id="q5" class="quizInput"> , yeah
+    </p>
+    <div id="q5-result" class="result"></div>
+
+    <button id="check-answers">Check Answers</button>
+    <div id="quiz-summary"></div>
+
+</div>
+
+<!-- 67 Container -->
+<div id="six-seven" class="modal">
+    <div id="modal-content" class="modal-content">
+        <h3>Click the 6th 7 or the 67th 67</h3>
+        <div id="button-grid"></div>
+    </div>
+</div>
+
+<!-- Peebles container -->
+<div id="mr-peebles" class="modal">
+    <div class="modal-content">
+        <h3>Watch this video!</h3>
+        <div id="video-container">
+            <video id="popup-video" autoplay loop>
+                <source src="media/peebles.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="video-close">Close Video</button>
         </div>
     </div>
+</div>
 
-
-    <!-- Peebles container -->
-    <div id="mr-peebles" class="modal">
-        <div class="modal-content">
-            <h3>Watch this video!</h3>
-            <div id="video-container">
-                <video id="popup-video" width="600" autoplay loop>
-                    <source src="media/peebles.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <button id="video-close">Close Video</button>
-            </div>
+<!-- Flip-a-coin popup -->
+<div id="flip-coin-container" class="modal">
+    <div class="modal-content">
+        <h3>Flip a Coin!</h3>
+        <div id="flip-container">
+            <button id="flip-coin">Flip</button>
+            <p id="coin-result"></p>
         </div>
     </div>
+</div>
 
-    <!-- Wheel Popup -->
-    <div id="flip-coin-container" class="modal">
-        <div class="modal-content">
-            <h3>Flip A Coin!</h3>
-            <div id="flip-container">
-                <button id="flip-coin">Flip</button>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

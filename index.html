@@ -11,6 +11,7 @@
     <h1>Sample Webpage</h1>
     <p>Wait for things to happen (smile)</p>
 
+    <!-- 67 Container -->
     <div id="six-seven" class="modal">
         <div id="modal-content">
                 <h3>Click the 6th 7 or the 67th 67</h3>
@@ -19,10 +20,30 @@
         </div>
     </div>
 
+
+    <!-- Peebles container -->
     <div id="mr-peebles" class="modal">
-        
+        <div class="modal-content">
+            <h3>Watch this video!</h3>
+            <div id="video-container">
+                <video id="popup-video" width="600" autoplay loop>
+                    <source src="media/peebles.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button id="video-close">Close Video</button>
+            </div>
+        </div>
     </div>
 
+    <!-- Wheel Popup -->
+    <div id="flip-coin-container" class="modal">
+        <div class="modal-content">
+            <h3>Flip A Coin!</h3>
+            <div id="flip-container">
+                <button id="flip-coin">Flip</button>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

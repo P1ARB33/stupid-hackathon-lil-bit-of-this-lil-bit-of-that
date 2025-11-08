@@ -3,6 +3,8 @@
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-content {
@@ -15,16 +17,20 @@
     background-image: url("media/67.jpg");
     background-size: cover;
     background-position: center;
-    padding: 0;
+    padding: 12px;
     overflow: auto; /* allow scrolling if needed */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #button-grid {
-    display: grid;
-    grid-template-columns: repeat(25, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 0;
-    width: 800px;
-    height: 800px;
+    max-width: 800px;
 }
 
 #button-grid button {

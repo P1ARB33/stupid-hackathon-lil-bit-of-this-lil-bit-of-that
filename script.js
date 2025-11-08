@@ -3,9 +3,9 @@ window.addEventListener("load", () => {
         const modal = document.getElementById("six-seven");
         const grid = document.getElementById("button-grid");
 
-        modal.style.display = "block";
+        modal.style.display = "flex";
 
-        const totalButtons = 10 * 10;
+        const totalButtons = 112;
         let buttons = [];
 
         for (let i = 0; i < totalButtons; i++) {
@@ -22,5 +22,5 @@ window.addEventListener("load", () => {
             modal.style.display = "none";
         });
 
-    }, 10000); // 10 seconds
+    }, 1000); // 10 seconds
 });
